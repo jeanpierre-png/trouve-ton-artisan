@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="container-fluid">
+      <!-- Bouton Burger -->
+      <button class="navbar-toggler" (click)="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </button>
+  
+      <div class="navbar-menu" [ngClass]="{ 'open': isMenuOpen }" (click)="closeMenu()"  id="navbarNav">
+        <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">
+          Accueil
+        </a>
+        <a class="nav-link" [routerLink]="['Bâtiment']" routerLinkActive="active" (click)="closeMenu()">
+          Bâtiment
+        </a>
+        <a class="nav-link" [routerLink]="['Services']" routerLinkActive="active" (click)="closeMenu()">
+          Service
+        </a>
+        <a class="nav-link" [routerLink]="['Fabrication']" routerLinkActive="active" (click)="closeMenu()">
+          Fabrication
+        </a>
+        <a class="nav-link" [routerLink]="['Alimentation']" routerLinkActive="active" (click)="closeMenu()">
+          Alimentation
+        </a>
+      </div>
+    </div>
+  </nav>
+  
