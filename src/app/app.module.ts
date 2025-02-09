@@ -12,6 +12,11 @@ import { DataService } from './service/data.service';
 import { FormsModule } from '@angular/forms';
 import { EtoilesComponent } from './composants/etoiles/etoiles.component';
 import { provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
+import { FooterComponent } from './composants/footer/footer.component';
+import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
+import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donnees-personnelles.component';
+import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibilite/declaration-accessibilite.component';
+import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
     HeaderComponent,
     NavbarComponent,
     HomeComponent,
-    EtoilesComponent
+    EtoilesComponent,
+    FooterComponent,
+    MentionsLegalesComponent,
+    DonneesPersonnellesComponent,
+    DeclarationAccessibiliteComponent,
+    GestionCookiesComponent
   ],
   imports: [
     BrowserModule,
