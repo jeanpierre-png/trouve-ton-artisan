@@ -1,0 +1,46 @@
+footer {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.background {
+    background-color: #384050;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.right-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icone {
+    gap: 10px;
+}
+
+.img-1 {
+    width: 40px;
+    height: 40px;
+}
+
+small .gap-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    width: 16px;
+    margin-right: 5px;
+}
+
+span {
+    color: #151217;
+    margin: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
