@@ -21,6 +21,7 @@ export interface artisan {
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataService {
 
   private jsonUrl = 'assets/datas.json';
@@ -31,9 +32,28 @@ export class DataService {
   getData(): Observable<artisan[]> {
     return this.http.get<artisan[]>(this.jsonUrl).pipe(
       map((data: artisan[]) => {
-        return data.map(item => ({ ...item, id: +item.id })); // Conversion de id en nombre //
+        return data.map(item => ({ ...item, id: +item.id, note: +item.note })); // Conversion de id en nombre //
       })
     );
   } 
+
+  getArtisanById(id: number): Observable<artisan | undefined> {
+    return this.getData().pipe(
+      map((artisans: artisan[]) => artisans.find((artisan) => artisan.id === id))
+    );
+  } 
+
+
+  // Récupère 3 artisans du mois (filtrés par `top: true`)
+  getTopArtisans(): Observable<any[]> {
+
+    return this.http.get<any[]>(this.jsonUrl).pipe(
+
+      map((artisans: any[]) => {
+        return artisans.filter((artisan) => artisan.top).slice(0, 3);
+      })
+
+    );
+  }  
 
 }

@@ -1,0 +1,85 @@
+<section class="cadre d-flex flex-wrap gap-2 mt-5 "><!-- mb-5 -->
+    <div class="encadrement-contenu">
+
+        
+        <h2 class="titre-1">
+            Comment trouver mon artisan ?
+        </h2>
+        <div class="encadrement-1">
+
+
+            <div class="para-1">
+                <p>
+                 1
+                </p>
+            </div>
+
+            <div class="para-2">
+                <p>
+                 Choisir la catégorie d’artisanat dans le menu.
+                </p>
+            </div>
+
+        </div>
+        <div class="encadrement-1">
+
+            <div class="para-1">
+                <p>
+                 2
+                </p>
+            </div>
+
+            <div class="para-2">
+                <p>
+                 Choisir un artisan.
+                </p>
+            </div>
+
+            
+
+        </div>
+        <div class="encadrement-1">
+
+            <div class="para-1">
+                <p>
+                 3
+                </p>
+            </div>
+
+            <div class="para-2">
+                <p>
+                 Le contacter via le formulaire de contact.
+                </p>
+            </div>
+
+        </div>
+        <div class="encadrement-1">
+
+            <div class="para-1">
+                <p>
+                 4
+                </p>
+            </div>
+
+            <div class="para-2">
+                <p>
+                 Une réponse sera apportée sous 48h.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="d-flex flex-wrap gap-2 mt-5 mb-5">
+    <div class="top-artisans">
+        <h2 class="titre-2">Artisans du Mois</h2>
+        <div *ngFor="let artisan of topArtisans" class="artisan-card">
+            <h3>{{ artisan.name }}</h3>
+            <p>Spécialité : {{ artisan.specialty }}</p>
+            <p>Localisation : {{ artisan.location }}</p>
+            <p>Note : {{ artisan.note }}</p>
+            <app-etoiles [note]="artisan.note"></app-etoiles> 
+        </div>
+    </div>
+</section>
