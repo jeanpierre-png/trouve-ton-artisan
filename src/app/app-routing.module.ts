@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
 import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibilite/declaration-accessibilite.component';
 import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donnees-personnelles.component';
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path: 'gestion-des-cookies',
     component: GestionCookiesComponent,
+  },
+
+  {
+    path: 'categorie/:category',
+    component: CategoriesArtisansComponent,
   }
 
 ];
