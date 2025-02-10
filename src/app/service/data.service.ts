@@ -32,16 +32,16 @@ export class DataService {
   getData(): Observable<artisan[]> {
     return this.http.get<artisan[]>(this.jsonUrl).pipe(
       map((data: artisan[]) => {
-        return data.map(item => ({ ...item, id: +item.id, note: +item.note })); // Conversion de id en nombre //
+        return data.map(item => ({ ...item, id: +item.id })); // Conversion de id en nombre //
       })
     );
-  } 
+  }
 
   getArtisanById(id: number): Observable<artisan | undefined> {
     return this.getData().pipe(
       map((artisans: artisan[]) => artisans.find((artisan) => artisan.id === id))
     );
-  } 
+  }
 
 
   // Récupère 3 artisans du mois (filtrés par `top: true`)
@@ -54,6 +54,13 @@ export class DataService {
       })
 
     );
-  }  
+  }
+
+  // Récupère les artisans par catégorie
+  getArtisansByCategory(category: string): Observable<artisan[]> {
+    return this.getData().pipe(
+      map((artisans: artisan[]) => artisans.filter((artisan) => artisan.category === category))
+    );
+  }
 
 }

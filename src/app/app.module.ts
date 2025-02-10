@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { BrowserModule} from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,7 @@ import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-lega
 import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donnees-personnelles.component';
 import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibilite/declaration-accessibilite.component';
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
+import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,10 @@ import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies
     MentionsLegalesComponent,
     DonneesPersonnellesComponent,
     DeclarationAccessibiliteComponent,
-    GestionCookiesComponent
+    GestionCookiesComponent,
+    CategoriesArtisansComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -38,6 +41,7 @@ import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies
     CommonModule,
     FormsModule
   ],
+
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
     DataService,
@@ -49,6 +53,7 @@ import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies
       }
     },
   ],
+
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,0 +1,41 @@
+.artisans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem; 
+    flex-basis: 30%;
+    max-width: 30%;
+    border: 1px solid #cd2c2e; 
+    text-align: center; 
+    padding: 15px; 
+    transition: transform 0.3s, box-shadow 0.3s; /* Animations */
+}
+
+.artisans:hover {
+    box-sizing: border-box; 
+    padding: 15px; 
+    border: 1px solid #cd2c2e; 
+    text-align: center; 
+    box-shadow: 2px 2px 11px 2px #384050;
+    background-color: #00497c;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: white;
+}
+
+a {
+    color: black;
+
+    &:hover {
+        color:#82b864; 
+    }
+}
+
+.artisan-liste {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin: 2rem 1rem;
+}
