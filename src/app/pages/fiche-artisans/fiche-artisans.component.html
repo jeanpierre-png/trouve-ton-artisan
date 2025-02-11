@@ -1,0 +1,72 @@
+<h2 class="main-title text-center fs-1">Fiche de l'artisan(e)</h2>
+
+<section *ngIf="artisan" class="container my-5">
+
+  <div class="custom-row row d-flex align-items-start m-4">
+   
+    <div class="contenu col-6 p-0">
+
+      <div class="artisan-carde p-4">
+        <h2>{{ artisan.name }}</h2>
+        <p><strong>Spécialité :</strong> {{ artisan.specialty }}</p>
+        <p><strong>Localisation :</strong> {{ artisan.location }}</p>
+        <p>
+          <strong>Site web : </strong>
+          <a *ngIf="artisan.website && artisan.website !== ''" [href]="artisan.website" target="_blank">{{
+            artisan.website }}</a>
+          <span *ngIf="!artisan.website || artisan.website === ''">L'artisan ne possède pas de site web</span>
+        </p>
+        <p><strong>Note :</strong> {{ artisan.note }}</p>
+        <app-etoiles [note]="artisan.note"></app-etoiles> 
+      </div>
+
+    </div>
+
+
+    <div class=" bande col-6 p-0">
+      <div class="a-propos p-4">
+        <h3>À propos</h3>
+        <p>{{ artisan.about }}</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row justify-content-center mt-5">
+
+    <form class="contact-form card p-4 shadow-sm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+      <h2 class="text-center mb-4">Contactez cet artisan</h2>
+
+      <div class="form-group mb-3">
+        <label for="name" class="form-label">Votre nom :</label>
+        <input type="text" id="name" name="name" class="form-control" required ngModel />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="object" class="form-label">Objet :</label>
+        <input type="text" id="object" name="object" class="form-control" required ngModel />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="message" class="form-label">Votre message :</label>
+        <textarea id="message" name="message" class="form-control" rows="5" required ngModel></textarea>
+      </div>
+
+      <div class="bouton">
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">
+          Envoyer
+        </button>
+      </div>
+
+    </form>
+
+    <!-- Message de confirmation -->
+    <div *ngIf="confirmationMessage" class="alert alert-success mt-3">
+      {{ confirmationMessage }}
+    </div>
+
+  </div>
+
+</section>

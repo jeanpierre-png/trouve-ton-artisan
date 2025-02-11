@@ -18,6 +18,7 @@ import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donne
 import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibilite/declaration-accessibilite.component';
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
 import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
+import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CategoriesArtisansComponent } from './composants/categories-artisans/ca
     DonneesPersonnellesComponent,
     DeclarationAccessibiliteComponent,
     GestionCookiesComponent,
-    CategoriesArtisansComponent
+    CategoriesArtisansComponent,
+    FicheArtisansComponent
   ],
 
   imports: [

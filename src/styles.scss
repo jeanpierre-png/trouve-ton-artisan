@@ -1,4 +1,29 @@
+@font-face {
+    font-family: "Graphik-bold";
+    src: url("/src/assets/fronts/Graphik-Bold-Trial.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Graphik-medium";
+    src: url("/src/assets/fronts/Graphik-Medium-Trial.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Graphik-regular";
+    src: url("/src/assets/fronts/Graphik-Regular-Trial.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color:#f1f8fc;
+    font-family: "Graphik-regular", sans-serif !important;
+}
 
+h1, h2{
+    font-family: "Graphik-bold";
 }

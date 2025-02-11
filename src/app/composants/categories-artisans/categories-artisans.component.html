@@ -14,6 +14,8 @@
       <p *ngIf="!artisan.website || artisan.website === ''">Site web : L'artisan ne possède pas de site web</p>
       <p>Note : {{ artisan.note }}</p>
       <app-etoiles [note]="artisan.note"></app-etoiles> 
+
+      <a [routerLink]="['/fiche-artisan', artisan.id]">Voir la fiche de l'artisan(e)</a>
       
     </div>
 
