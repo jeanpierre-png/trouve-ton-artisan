@@ -1,0 +1,65 @@
+.artisan-carde {
+    flex: 1;
+    max-width: 390px;
+    height: auto; 
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #cd2c2e;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.a-propos {
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #cd2c2e;
+    text-align: center;
+    box-shadow: 2px 2px 11px 2px #384050;
+    background-color: #00497c;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    width: 100%; 
+    height: 287px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu {
+    flex-basis: content;
+    justify-content: center;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.main-title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.material-icons {
+    color: #ffd700;
+}
+
+a {
+    color: black;
+
+    &:hover {
+        color: #82b864;
+    }
+}

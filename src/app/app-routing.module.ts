@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
 import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibilite/declaration-accessibilite.component';
 import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donnees-personnelles.component';
+import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.component';
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
@@ -38,7 +39,12 @@ const routes: Routes = [
   {
     path: 'categorie/:category',
     component: CategoriesArtisansComponent,
-  }
+  },
+
+  {
+    path: 'fiche-artisan/:id',
+    component: FicheArtisansComponent,
+  },
 
 ];
 
