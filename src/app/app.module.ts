@@ -19,6 +19,7 @@ import { DeclarationAccessibiliteComponent } from './pages/declaration-accessibi
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
 import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
 import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.component';
+import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.co
     DeclarationAccessibiliteComponent,
     GestionCookiesComponent,
     CategoriesArtisansComponent,
-    FicheArtisansComponent
+    FicheArtisansComponent,
+    ListesArtisansComponent
   ],
 
   imports: [
