@@ -8,6 +8,7 @@ import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies
 import { HomeComponent } from './pages/home/home.component';
 import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,12 @@ const routes: Routes = [
   {
     path: 'listes-artisans',
     component: ListesArtisansComponent,
-  }
+  },
+
+  {
+    path: '404',
+    component: Page404Component,
+  }, 
 
 ];
 
