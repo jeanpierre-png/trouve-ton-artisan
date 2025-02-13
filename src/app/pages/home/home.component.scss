@@ -106,3 +106,30 @@ p{
       text-decoration: underline; 
     }
 }
+
+/* Ecrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .top-artisans {
+        gap: 20px; 
+    }
+
+    .artisan-card {
+        flex-basis: 80%; 
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ecrans petits (smartphones) */
+@media (max-width: 576px) {
+
+    .artisan-card {
+        flex-basis: 100%; 
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .titre-1 {
+        font-size: 1.5rem;
+    }
+} 

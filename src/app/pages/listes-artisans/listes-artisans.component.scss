@@ -39,3 +39,29 @@
 a{
     text-decoration:none;
 }
+
+/* Ecrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .artisan-card{
+        flex-basis: 80%; 
+        max-width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .all-artisan {
+        gap: 1.5rem; 
+    }
+}
+
+/* Ecrans petits (smartphones) */
+@media (max-width: 576px) {
+    .artisan-card {
+        flex-basis: 100%; 
+        max-width: 100%; 
+        margin-bottom: 1rem;
+    }
+
+    .all-artisan {
+        gap: 1rem; 
+    }
+}
