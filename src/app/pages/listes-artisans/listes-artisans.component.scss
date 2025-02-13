@@ -1,3 +1,7 @@
+.all-artisans{
+    width: 100%;
+}
+
 .artisan-card{
     display: flex;
     justify-content: center;
@@ -29,5 +33,9 @@
 
     &:hover{
         color:#82b864;
-    }
+    } 
+}
+
+a{
+    text-decoration:none;
 }

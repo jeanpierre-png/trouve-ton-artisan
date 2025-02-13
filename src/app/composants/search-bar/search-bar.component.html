@@ -1,0 +1,28 @@
+<form class="d-flex" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+    
+    <input class="form-control" type="search" placeholder="Ville, Spécialité, Noms" aria-label="Search"
+        [(ngModel)]="searchTerm" name="search" (input)="onSearch()" required 
+    />
+
+    <button type="submit">
+        <i class="bi bi-search"></i>
+        <span class="material-icons">search</span>
+    </button>
+
+</form>
+
+<!-- Suggestions affichées sous la barre de recherche -->
+<div *ngIf="searchTerm.trim() && !isSearchSubmitted && getFilteredArtisans().length > 0" class="search-results">
+    <div *ngFor="let artisan of getFilteredArtisans()" class="artisan-card" (click)="onArtisanClick(artisan)">
+        <a [routerLink]="['/fiche-artisan', artisan.id]">
+            <h3>{{ artisan.name }}</h3>
+            <p>Ville : {{ artisan.location }}</p>
+            <p>Spécialité : {{ artisan.specialty }}</p>
+        </a>
+    </div>
+</div>
+
+
+<div *ngIf="searchTerm.trim() && getFilteredArtisans().length === 0">
+    <p>Aucun artisan trouvé pour "{{ searchTerm }}"</p>
+</div>
