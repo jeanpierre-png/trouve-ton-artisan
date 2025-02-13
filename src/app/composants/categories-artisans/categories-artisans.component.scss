@@ -39,3 +39,30 @@ a {
     gap: 2rem; 
     margin: 2rem 1rem;
 }
+
+/* Ecrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .artisans{
+        flex-basis: 80%; 
+        max-width: 80%; 
+        margin-bottom: 1rem;
+    }
+
+    .artisan-liste {
+        gap: 1.5rem; 
+    }
+}
+
+/* Ecrans petits (smartphones) */
+@media (max-width: 576px) {
+    .artisans {
+        flex-basis: 100%; 
+        max-width: 100%; 
+        margin-bottom: 1rem;
+    }
+
+    .artisan-liste {
+        gap: 1rem; 
+    }
+}
+

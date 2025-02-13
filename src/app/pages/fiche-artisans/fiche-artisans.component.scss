@@ -63,3 +63,57 @@ a {
         color: #82b864;
     }
 }
+
+/* Écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .artisan-carde,
+    .a-propos {
+        margin-bottom: 20px; 
+    }
+
+    .bande{
+        width: 100%;
+    }
+
+    .custom-row {
+        gap: 15px; 
+    }
+
+    .main-title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 1.5rem; 
+    }
+
+    .bouton {
+        width: 100%; 
+    }
+}
+
+/* Écrans petits (smartphones) */
+@media (max-width: 576px) {
+    .artisan-carde,
+    .a-propos {
+        height: auto; 
+        margin-bottom: 15px;
+        flex-basis: 100%; 
+        max-width: 100%; 
+    }
+
+    .bande{
+        width: 100%;
+    }
+
+    .custom-row {
+        flex-direction: row;
+        gap: 10px; 
+    }
+
+    .main-title {
+        font-size: 1.25rem; 
+    }
+
+    .bouton {
+        width: 100%; 
+    }
+}

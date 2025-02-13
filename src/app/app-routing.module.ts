@@ -19,7 +19,6 @@ const routes: Routes = [
   {
     path: 'mention-legales',
     component: MentionsLegalesComponent,
-
   },
 
   {
@@ -50,7 +49,6 @@ const routes: Routes = [
   {
     path: 'listes-artisans',
     component: ListesArtisansComponent,
-
   }
 
 ];

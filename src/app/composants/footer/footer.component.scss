@@ -44,3 +44,42 @@ a {
     color: white;
     text-decoration: none;
 }
+
+/* Moyens écrans (tablettes) */
+@media (max-width: 768px) {
+    .background {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .left-content {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* Petits écrans (smartphones) */
+@media (max-width: 480px) {
+    .background {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .right-content {
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+
+    .right-content {
+        margin-top: 15px;
+    }
+}
