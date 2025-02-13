@@ -6,6 +6,7 @@ import { DonneesPersonnellesComponent } from './pages/donnees-personnelles/donne
 import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.component';
 import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans.component';
 import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
 
 
@@ -45,6 +46,12 @@ const routes: Routes = [
     path: 'fiche-artisan/:id',
     component: FicheArtisansComponent,
   },
+
+  {
+    path: 'listes-artisans',
+    component: ListesArtisansComponent,
+
+  }
 
 ];
 

@@ -80,6 +80,7 @@
             <p>Localisation : {{ artisan.location }}</p>
             <p>Note : {{ artisan.note }}</p>
             <app-etoiles [note]="artisan.note"></app-etoiles> 
+            <a [routerLink]="['/fiche-artisan', artisan.id]" class="artisan-link">Voir la fiche de l'artisan(e)</a>
         </div>
     </div>
 </section>

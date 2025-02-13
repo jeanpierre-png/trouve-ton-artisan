@@ -20,6 +20,8 @@ import { GestionCookiesComponent } from './pages/gestion-cookies/gestion-cookies
 import { CategoriesArtisansComponent } from './composants/categories-artisans/categories-artisans.component';
 import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.component';
 import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans.component';
+import { SearchBarComponent } from './composants/search-bar/search-bar.component';
+import { SearchArtisansPipe } from './pipe/search-artisans.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans
     GestionCookiesComponent,
     CategoriesArtisansComponent,
     FicheArtisansComponent,
-    ListesArtisansComponent
+    ListesArtisansComponent,
+    SearchBarComponent,
+    SearchArtisansPipe
   ],
 
   imports: [
