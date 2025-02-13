@@ -22,6 +22,7 @@ import { FicheArtisansComponent } from './pages/fiche-artisans/fiche-artisans.co
 import { ListesArtisansComponent } from './pages/listes-artisans/listes-artisans.component';
 import { SearchBarComponent } from './composants/search-bar/search-bar.component';
 import { SearchArtisansPipe } from './pipe/search-artisans.pipe';
+import { Page404Component } from './pages/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SearchArtisansPipe } from './pipe/search-artisans.pipe';
     FicheArtisansComponent,
     ListesArtisansComponent,
     SearchBarComponent,
-    SearchArtisansPipe
+    SearchArtisansPipe,
+    Page404Component
   ],
 
   imports: [
