@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  copyright: string= "../../../assets/droits-d-auteur.png"
+
 }
