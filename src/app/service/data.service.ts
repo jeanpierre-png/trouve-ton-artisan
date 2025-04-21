@@ -16,6 +16,7 @@ export interface artisan {
   website: string;
   about: string;
   email: string;
+  top: boolean;
 }
 
 @Injectable({
